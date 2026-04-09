@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wai Chou | Android & Flutter Developer</title>
+    <meta
+      name="description"
+      content="10年移动端开发经验，专注 Android、Kotlin、Java、Flutter 应用开发。"
+    />
+    <style>
+      :root {
+        --bg: #0f1220;
+        --card: #171b2e;
+        --text: #e8ebff;
+        --muted: #a8b0d8;
+        --primary: #7a7aff;
+        --accent: #3ed0ff;
+        --line: #2a3157;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at 20% 0%, #1a2050 0%, var(--bg) 45%);
+        line-height: 1.6;
+      }
+
+      .container {
+        width: min(980px, 92vw);
+        margin: 0 auto;
+        padding: 48px 0 72px;
+      }
+
+      .hero {
+        padding: 36px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: linear-gradient(145deg, rgba(122, 122, 255, 0.16), rgba(62, 208, 255, 0.08));
+        backdrop-filter: blur(4px);
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 13px;
+        color: var(--accent);
+        border: 1px solid rgba(62, 208, 255, 0.35);
+        margin-bottom: 14px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(28px, 4vw, 42px);
+        line-height: 1.2;
+      }
+
+      .subtitle {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .grid {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        background: var(--card);
+        border-radius: 14px;
+        padding: 20px;
+      }
+
+      .card h2 {
+        margin: 0 0 12px;
+        font-size: 18px;
+      }
+
+      .col-7 {
+        grid-column: span 7;
+      }
+
+      .col-5 {
+        grid-column: span 5;
+      }
+
+      .col-12 {
+        grid-column: span 12;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .skill {
+        font-size: 13px;
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: 1px solid #3a4270;
+        color: #d7ddff;
+        background: rgba(122, 122, 255, 0.1);
+      }
+
+      .footer {
+        margin-top: 28px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 860px) {
+        .col-7,
+        .col-5 {
+          grid-column: span 12;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hero">
+        <span class="tag">Android / Flutter Developer</span>
+        <h1>你好，我是 Wai Chou</h1>
+        <p class="subtitle">
+          我是一名拥有 <strong>10 年工作经验</strong> 的移动端开发工程师，擅长使用
+          <strong>Java、Kotlin、Flutter</strong> 构建高质量 App，关注性能、稳定性与用户体验。
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="card col-7">
+          <h2>关于我</h2>
+          <ul>
+            <li>专注移动应用开发与架构设计，覆盖 Android 原生和 Flutter 跨平台。</li>
+            <li>具备从 0 到 1 搭建项目、从 1 到 N 持续迭代优化的完整经验。</li>
+            <li>擅长复杂业务功能落地、性能优化、工程化建设与线上问题排查。</li>
+            <li>重视代码质量、可维护性与团队协作效率。</li>
+          </ul>
+        </article>
+
+        <article class="card col-5">
+          <h2>核心技术栈</h2>
+          <div class="skills">
+            <span class="skill">Android</span>
+            <span class="skill">Java</span>
+            <span class="skill">Kotlin</span>
+            <span class="skill">Flutter</span>
+            <span class="skill">Dart</span>
+            <span class="skill">Gradle</span>
+            <span class="skill">Jetpack</span>
+            <span class="skill">GetX</span>
+          </div>
+        </article>
+
+        <article class="card col-12">
+          <h2>我能做什么</h2>
+          <ul>
+            <li>Android 原生应用开发：业务功能、架构治理、稳定性与性能优化。</li>
+            <li>Flutter 跨平台开发：模块化设计、状态管理、平台能力集成。</li>
+            <li>现有项目重构与升级：老项目技术债治理、架构演进、工程流程优化。</li>
+            <li>应用发布与维护：打包发布、版本迭代、问题定位与修复。</li>
+          </ul>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>
+          可在此补充你的联系方式（例如 GitHub、邮箱、博客）：
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
